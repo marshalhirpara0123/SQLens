@@ -1,0 +1,20 @@
+[
+  {"question": "How many customers are in the database?", "difficulty": "easy"},
+  {"question": "List the names of all genres.", "difficulty": "easy"},
+  {"question": "What is the total number of tracks in the database?", "difficulty": "easy"},
+  {"question": "Show the first 5 customers ordered by CustomerId.", "difficulty": "easy"},
+  {"question": "How many employees are there?", "difficulty": "easy"},
+
+  {"question": "How many tracks are there in each genre?", "difficulty": "medium"},
+  {"question": "What is the total sales amount per billing country, from highest to lowest?", "difficulty": "medium"},
+  {"question": "List the top 5 customers by total amount spent across all their invoices.", "difficulty": "medium"},
+  {"question": "Which employee has the most customers assigned to them as support representative?", "difficulty": "medium"},
+  {"question": "What is the average unit price of tracks, broken down by media type?", "difficulty": "medium"},
+
+  {"question": "Which artist has generated the most total revenue from track sales?", "difficulty": "hard"},
+  {"question": "What percentage of all tracks belong to the Rock genre?", "difficulty": "hard"},
+  {"question": "Find the employee who has no manager above them in the reporting chain.", "difficulty": "hard"},
+  {"question": "List customers who have never made a single purchase.", "difficulty": "hard"},
+  {"question": "Which playlist has the most tracks, and how many tracks does it contain?", "difficulty": "hard"},
+  {"question": "For each year with invoices, show the total sales for that year, ordered by year.", "difficulty": "hard"}
+]

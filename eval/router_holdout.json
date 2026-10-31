@@ -1,0 +1,93 @@
+{
+  "_instructions": [
+    "HELD-OUT router test set. It only proves anything if the safety net has never 'seen' these questions.",
+    "1. Write the questions WITHOUT opening backend/router_rules.py. Ideally a teammate who hasn't read it writes them.",
+    "2. At least 12 questions, and at least 3 in EACH category: sql_only, doc_only, hybrid. Aim for about 5 each.",
+    "3. Decide each question's category yourself BEFORE running anything. Never change a category after seeing the router's output.",
+    "4. Write like a real user, not like the PDFs. Include some document questions that do NOT use words like policy, handbook or FAQ, and some data questions that merely CONTAIN words like catalog, document, rules, terms, return or refund.",
+    "5. sql_only must be answerable from the Chinook database, doc_only from the 3 PDFs (catalog_faq, employee_handbook, returns_policy), hybrid needs both.",
+    "6. Do NOT reuse questions from eval/golden_set_template.json (the script rejects duplicates).",
+    "7. Commit this file to git BEFORE the first run. After you've seen results, do not tune the rules to them; if you do, report the new numbers as in-sample, not held-out.",
+    "Run it with:  python eval/measure_router.py --holdout"
+  ],
+  "_example": {
+    "id": "h-01",
+    "category": "sql_only",
+    "question": "Which three cities have the most customers?",
+    "author": "Henil"
+  },
+  "questions": [
+    {
+      "id": "h-01",
+      "category": "sql_only",
+      "question": "Which three cities have the most customers?",
+      "author": "Henil"
+    },
+    {
+        "id": "h-02",
+        "category": "sql_only",
+        "question": "What is the total revenue of sales in 2023?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-03",
+        "category": "sql_only",
+        "question": "List the top five best-selling albums in the database.",
+        "author": "Henil"
+        },
+        {
+        "id": "h-04",
+        "category": "doc_only",
+        "question": "What is the company's policy for return albums?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-05",
+        "category": "doc_only",
+        "question": "Who can solve billing questions?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-06",
+        "category": "doc_only",
+        "question": "How's the catalog organized?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-07",
+        "category": "hybrid",
+        "question": "How many employees are there in database, and what is the policy for new employee Onboarding?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-08",
+        "category": "hybrid",
+        "question": "List top 5 city has the most customers and what is the customer lookup?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-09",
+        "category": "hybrid",
+        "question": "Which departments have the highest number of employees, What is the employee escalation path?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-10",
+        "category": "sql_only",
+        "question": "Which Artist has the most albums for each genere in the database?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-11",
+        "category": "doc_only",
+        "question": "Is the downloaded albums can be refunded?",
+        "author": "Henil"
+        },
+        {
+        "id": "h-12",
+        "category": "hybrid",
+        "question": "How many total albums are there in the database, How many days after customer repeat request?",
+        "author": "Henil"
+        }
+  ]
+}

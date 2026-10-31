@@ -1,0 +1,23 @@
+# Runtime dependencies for the Docker image ONLY.
+#
+# Deliberately smaller than the project's requirements.txt: no pytest, no
+# Ragas, no langchain-ollama / langchain-huggingface. Those are used by the
+# evaluation scripts and tests, not by the running app, and leaving them out
+# keeps the image smaller and the build faster.
+#
+# PyTorch is NOT listed here: the Dockerfile installs the CPU-only build
+# first (the embedding model is tiny, so a GPU build would only add ~2GB).
+#
+# For a client delivery, replace these with exact versions from a working
+# environment so the build is reproducible months from now:
+#     pip freeze > pinned.txt     (then copy only the lines for these packages)
+
+fastapi
+uvicorn[standard]
+pydantic
+requests
+python-multipart
+langgraph
+chromadb
+sentence-transformers
+pypdf

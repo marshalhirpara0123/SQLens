@@ -1,0 +1,188 @@
+{
+  "set": "golden set (in-sample)",
+  "rows": [
+    {
+      "id": "sql-001",
+      "category": "sql_only",
+      "question": "How many customers are there in total?",
+      "author": null,
+      "before": "unknown",
+      "after": "unknown",
+      "note": null
+    },
+    {
+      "id": "sql-002",
+      "category": "sql_only",
+      "question": "Which country has the most customers?",
+      "author": null,
+      "before": "unknown",
+      "after": "unknown",
+      "note": null
+    },
+    {
+      "id": "sql-003",
+      "category": "sql_only",
+      "question": "List the top 5 best-selling tracks by total quantity sold.",
+      "author": null,
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "sql-004",
+      "category": "sql_only",
+      "question": "What is the average invoice total?",
+      "author": null,
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "sql-005",
+      "category": "sql_only",
+      "question": "Which employee has the most customers assigned to them?",
+      "author": null,
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "sql-006",
+      "category": "sql_only",
+      "question": "What is the total revenue in the single year with the highest total sales?",
+      "author": null,
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "sql-007",
+      "category": "sql_only",
+      "question": "How many distinct genres are there in the catalog?",
+      "author": null,
+      "before": "rag",
+      "after": "rag",
+      "note": null
+    },
+    {
+      "id": "sql-008",
+      "category": "sql_only",
+      "question": "Which media type has the most tracks associated with it?",
+      "author": null,
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "doc-001",
+      "category": "doc_only",
+      "question": "How long do I have to return an unopened physical CD or vinyl record?",
+      "author": null,
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "doc-002",
+      "category": "doc_only",
+      "question": "Are digital track or album downloads refundable once the download has completed?",
+      "author": null,
+      "before": "sql",
+      "after": "both",
+      "note": "Router adjusted 'sql' to 'both': the question explicitly refers to documents ('refundable')."
+    },
+    {
+      "id": "doc-003",
+      "category": "doc_only",
+      "question": "What happens if a single customer generates more than three return requests within a 90-day window?",
+      "author": null,
+      "before": "sql",
+      "after": "both",
+      "note": "Router adjusted 'sql' to 'both': the question explicitly refers to documents ('What happens if')."
+    },
+    {
+      "id": "doc-004",
+      "category": "doc_only",
+      "question": "Can an employee process a refund without an InvoiceId?",
+      "author": null,
+      "before": "sql",
+      "after": "both",
+      "note": "Router adjusted 'sql' to 'both': the question explicitly refers to documents ('Can an employee')."
+    },
+    {
+      "id": "doc-005",
+      "category": "doc_only",
+      "question": "How does the store distinguish a physical CD track from a digital download of the same recording?",
+      "author": null,
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "doc-006",
+      "category": "doc_only",
+      "question": "Can a customer purchase a Playlist directly?",
+      "author": null,
+      "before": "rag",
+      "after": "rag",
+      "note": null
+    },
+    {
+      "id": "hybrid-001",
+      "category": "hybrid",
+      "question": "How many tracks are in the Rock genre, and how does the catalog FAQ describe how Genre is used across the store?",
+      "author": null,
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "hybrid-002",
+      "category": "hybrid",
+      "question": "Which employee is at the top of the reporting chain with no manager above them, and per the handbook, how are new Employee records linked to their supervisor?",
+      "author": null,
+      "before": "sql",
+      "after": "both",
+      "note": "Router adjusted 'sql' to 'both': the question explicitly refers to documents ('handbook')."
+    },
+    {
+      "id": "hybrid-003",
+      "category": "hybrid",
+      "question": "Per the returns policy, who does a customer escalate to if they dispute a refund decision, and how many total customers do we have who could potentially file such a dispute?",
+      "author": null,
+      "before": "sql",
+      "after": "both",
+      "note": "Router adjusted 'sql' to 'both': the question explicitly refers to documents ('policy')."
+    },
+    {
+      "id": "hybrid-004",
+      "category": "hybrid",
+      "question": "How many playlists exist in total, and per the FAQ, can a customer purchase a playlist directly?",
+      "author": null,
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "hybrid-005",
+      "category": "hybrid",
+      "question": "How many tracks are tagged with an Audiobook or Spoken Word genre, and does our returns policy treat them differently from other content?",
+      "author": null,
+      "before": "both",
+      "after": "both",
+      "note": null
+    }
+  ],
+  "before": {
+    "n": 19,
+    "covered": 13,
+    "exact": 7,
+    "over": 6
+  },
+  "after": {
+    "n": 19,
+    "covered": 18,
+    "exact": 9,
+    "over": 9
+  }
+}

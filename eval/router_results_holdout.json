@@ -1,0 +1,125 @@
+{
+  "set": "HELD-OUT",
+  "rows": [
+    {
+      "id": "h-01",
+      "category": "sql_only",
+      "question": "Which three cities have the most customers?",
+      "author": "Henil",
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "h-02",
+      "category": "sql_only",
+      "question": "What is the total revenue of sales in 2023?",
+      "author": "Henil",
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "h-03",
+      "category": "sql_only",
+      "question": "List the top five best-selling albums in the database.",
+      "author": "Henil",
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "h-04",
+      "category": "doc_only",
+      "question": "What is the company's policy for return albums?",
+      "author": "Henil",
+      "before": "rag",
+      "after": "rag",
+      "note": null
+    },
+    {
+      "id": "h-05",
+      "category": "doc_only",
+      "question": "Who can solve billing questions?",
+      "author": "Henil",
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "h-06",
+      "category": "doc_only",
+      "question": "How's the catalog organized?",
+      "author": "Henil",
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "h-07",
+      "category": "hybrid",
+      "question": "How many employees are there in database, and what is the policy for new employee Onboarding?",
+      "author": "Henil",
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "h-08",
+      "category": "hybrid",
+      "question": "List top 5 city has the most customers and what is the customer lookup?",
+      "author": "Henil",
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "h-09",
+      "category": "hybrid",
+      "question": "Which departments have the highest number of employees, What is the employee escalation path?",
+      "author": "Henil",
+      "before": "sql",
+      "after": "both",
+      "note": "Router adjusted 'sql' to 'both': the question explicitly refers to documents ('escalation')."
+    },
+    {
+      "id": "h-10",
+      "category": "sql_only",
+      "question": "Which Artist has the most albums for each genere in the database?",
+      "author": "Henil",
+      "before": "sql",
+      "after": "sql",
+      "note": null
+    },
+    {
+      "id": "h-11",
+      "category": "doc_only",
+      "question": "Is the downloaded albums can be refunded?",
+      "author": "Henil",
+      "before": "both",
+      "after": "both",
+      "note": null
+    },
+    {
+      "id": "h-12",
+      "category": "hybrid",
+      "question": "How many total albums are there in the database, How many days after customer repeat request?",
+      "author": "Henil",
+      "before": "both",
+      "after": "both",
+      "note": null
+    }
+  ],
+  "before": {
+    "n": 12,
+    "covered": 9,
+    "exact": 7,
+    "over": 2
+  },
+  "after": {
+    "n": 12,
+    "covered": 10,
+    "exact": 8,
+    "over": 2
+  }
+}

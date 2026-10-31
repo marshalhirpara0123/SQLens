@@ -1,0 +1,106 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+
+# ===== Virtual Environments =====
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ===== Environment / Secrets =====
+.env
+.env.*
+*.env
+!.env.example
+
+# ===== Testing / Tooling Caches =====
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ===== OS / System Artifacts =====
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== SQLite Runtime & Lock Files =====
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+
+# ===== Project Data — Regenerable & Ephemeral =====
+# ChromaDB's persisted vector index — large binary files, fully rebuildable
+# by running scripts/setup.py or rag_pipeline/retrieve.py against data/pdfs/.
+data/chroma/*
+
+# Live-uploaded PDFs (Phase 4 feature) — ephemeral runtime additions.
+# Keeps repo clean while preserving directory structure via .gitkeep.
+data/pdfs/uploads/*
+!data/pdfs/uploads/.gitkeep
+
+# Live-uploaded databases (built from user .sql scripts) — ephemeral runtime additions.
+data/db/uploads/*
+
+# ===== Project Data — Kept in git =====
+# data/db/chinook.db       # Reference SQLite demo database
+# data/db/Chinook_Sqlite.sql
+# data/pdfs/*.pdf          # Baseline knowledge documents
+# data/samples/*.sql       # Demo SQL upload scripts
+
+# ===== Logs & Scratch Files =====
+*.log
+scratch/
+tmp/
+temp/
+fake.txt
+
+# ===== Docker =====
+# docker/Dockerfile and docker/docker-compose.yml are tracked in git
+
+# ===== Node (if applicable) =====
+node_modules/

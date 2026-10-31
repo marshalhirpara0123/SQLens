@@ -1,0 +1,527 @@
+{
+  "total_questions": 16,
+  "without_self_correction_pass_rate": 93.75,
+  "with_self_correction_pass_rate": 93.75,
+  "delta_percentage_points": 0.0,
+  "per_question_results": [
+    {
+      "question": "How many customers are in the database?",
+      "difficulty": "easy",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT COUNT(*) FROM Customer\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT COUNT(*) FROM Customer\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT COUNT(*) FROM Customer\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT COUNT(*) FROM Customer\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "List the names of all genres.",
+      "difficulty": "easy",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT [Name]\nFROM [Genre]\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT [Name]\nFROM [Genre]\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT [Name]\nFROM [Genre]\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT [Name]\nFROM [Genre]\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "What is the total number of tracks in the database?",
+      "difficulty": "easy",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT COUNT(*) FROM Track\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT COUNT(*) FROM Track\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT COUNT(*) FROM Track\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT COUNT(*) FROM Track\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "Show the first 5 customers ordered by CustomerId.",
+      "difficulty": "easy",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT * FROM Customer ORDER BY CustomerId LIMIT 5",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT * FROM Customer ORDER BY CustomerId LIMIT 5",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT * FROM Customer ORDER BY CustomerId LIMIT 5",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT * FROM Customer ORDER BY CustomerId LIMIT 5",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "How many employees are there?",
+      "difficulty": "easy",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT COUNT(*) FROM Employee\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT COUNT(*) FROM Employee\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT COUNT(*) FROM Employee\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT COUNT(*) FROM Employee\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "How many tracks are there in each genre?",
+      "difficulty": "medium",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT g.Name, COUNT(t.TrackId) AS TrackCount\nFROM Genre g\nJOIN Track t ON g.GenreId = t.GenreId\nGROUP BY g.Name\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT g.Name, COUNT(t.TrackId) AS TrackCount\nFROM Genre g\nJOIN Track t ON g.GenreId = t.GenreId\nGROUP BY g.Name\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT g.Name, COUNT(t.TrackId) AS TrackCount\nFROM Genre g\nJOIN Track t ON g.GenreId = t.GenreId\nGROUP BY g.Name\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT g.Name, COUNT(t.TrackId) AS TrackCount\nFROM Genre g\nJOIN Track t ON g.GenreId = t.GenreId\nGROUP BY g.Name\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "What is the total sales amount per billing country, from highest to lowest?",
+      "difficulty": "medium",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT \n    i.BillingCountry, \n    SUM(i.Total) AS TotalSales\nFROM \n    Invoice i\nGROUP BY \n    i.BillingCountry\nORDER BY \n    TotalSales DESC\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT \n    i.BillingCountry, \n    SUM(i.Total) AS TotalSales\nFROM \n    Invoice i\nGROUP BY \n    i.BillingCountry\nORDER BY \n    TotalSales DESC\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT \n    i.BillingCountry, \n    SUM(i.Total) AS TotalSales\nFROM \n    Invoice i\nGROUP BY \n    i.BillingCountry\nORDER BY \n    TotalSales DESC\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT \n    i.BillingCountry, \n    SUM(i.Total) AS TotalSales\nFROM \n    Invoice i\nGROUP BY \n    i.BillingCountry\nORDER BY \n    TotalSales DESC\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "List the top 5 customers by total amount spent across all their invoices.",
+      "difficulty": "medium",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT c.FirstName, c.LastName, SUM(i.Total) AS TotalAmount\nFROM Customer c\nJOIN Invoice i ON c.CustomerId = i.CustomerId\nGROUP BY c.CustomerId, c.FirstName, c.LastName\nORDER BY TotalAmount DESC\nLIMIT 5",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT c.FirstName, c.LastName, SUM(i.Total) AS TotalAmount\nFROM Customer c\nJOIN Invoice i ON c.CustomerId = i.CustomerId\nGROUP BY c.CustomerId, c.FirstName, c.LastName\nORDER BY TotalAmount DESC\nLIMIT 5",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT c.FirstName, c.LastName, SUM(i.Total) AS TotalAmount\nFROM Customer c\nJOIN Invoice i ON c.CustomerId = i.CustomerId\nGROUP BY c.CustomerId, c.FirstName, c.LastName\nORDER BY TotalAmount DESC\nLIMIT 5",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT c.FirstName, c.LastName, SUM(i.Total) AS TotalAmount\nFROM Customer c\nJOIN Invoice i ON c.CustomerId = i.CustomerId\nGROUP BY c.CustomerId, c.FirstName, c.LastName\nORDER BY TotalAmount DESC\nLIMIT 5",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "Which employee has the most customers assigned to them as support representative?",
+      "difficulty": "medium",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT e.FirstName, e.LastName, COUNT(c.CustomerId) AS TotalCustomers\nFROM Employee e\nJOIN Customer c ON e.EmployeeId = c.SupportRepId\nGROUP BY e.EmployeeId, e.FirstName, e.LastName\nORDER BY TotalCustomers DESC\nLIMIT 1",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT e.FirstName, e.LastName, COUNT(c.CustomerId) AS TotalCustomers\nFROM Employee e\nJOIN Customer c ON e.EmployeeId = c.SupportRepId\nGROUP BY e.EmployeeId, e.FirstName, e.LastName\nORDER BY TotalCustomers DESC\nLIMIT 1",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT e.FirstName, e.LastName, COUNT(c.CustomerId) AS TotalCustomers\nFROM Employee e\nJOIN Customer c ON e.EmployeeId = c.SupportRepId\nGROUP BY e.EmployeeId, e.FirstName, e.LastName\nORDER BY TotalCustomers DESC\nLIMIT 1",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT e.FirstName, e.LastName, COUNT(c.CustomerId) AS TotalCustomers\nFROM Employee e\nJOIN Customer c ON e.EmployeeId = c.SupportRepId\nGROUP BY e.EmployeeId, e.FirstName, e.LastName\nORDER BY TotalCustomers DESC\nLIMIT 1",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "What is the average unit price of tracks, broken down by media type?",
+      "difficulty": "medium",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT \n    mt.[Name], \n    AVG(t.[UnitPrice]) AS Average_Unit_Price\nFROM \n    [Track] t\nJOIN \n    [MediaType] mt ON t.[MediaTypeId] = mt.[MediaTypeId]\nGROUP BY \n    mt.[Name]\nORDER BY \n    Average_Unit_Price DESC\nLIMIT 5",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT \n    mt.[Name], \n    AVG(t.[UnitPrice]) AS Average_Unit_Price\nFROM \n    [Track] t\nJOIN \n    [MediaType] mt ON t.[MediaTypeId] = mt.[MediaTypeId]\nGROUP BY \n    mt.[Name]\nORDER BY \n    Average_Unit_Price DESC\nLIMIT 5",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT \n    mt.[Name], \n    AVG(t.[UnitPrice]) AS Average_Unit_Price\nFROM \n    [Track] t\nJOIN \n    [MediaType] mt ON t.[MediaTypeId] = mt.[MediaTypeId]\nGROUP BY \n    mt.[Name]\nORDER BY \n    Average_Unit_Price DESC\nLIMIT 10",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT \n    mt.[Name], \n    AVG(t.[UnitPrice]) AS Average_Unit_Price\nFROM \n    [Track] t\nJOIN \n    [MediaType] mt ON t.[MediaTypeId] = mt.[MediaTypeId]\nGROUP BY \n    mt.[Name]\nORDER BY \n    Average_Unit_Price DESC\nLIMIT 10",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "Which artist has generated the most total revenue from track sales?",
+      "difficulty": "hard",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT a.[Name], SUM(il.[Quantity] * t.[UnitPrice]) AS TotalRevenue\nFROM [Track] t\nJOIN [InvoiceLine] il ON t.[TrackId] = il.[TrackId]\nJOIN [Invoice] i ON il.[InvoiceId] = i.[InvoiceId]\nJOIN [Customer] c ON i.[CustomerId] = c.[CustomerId]\nJOIN [Artist] a ON t.[AlbumId] = a.[ArtistId]\nGROUP BY a.[Name]\nORDER BY TotalRevenue DESC\nLIMIT 1",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT a.[Name], SUM(il.[Quantity] * t.[UnitPrice]) AS TotalRevenue\nFROM [Track] t\nJOIN [InvoiceLine] il ON t.[TrackId] = il.[TrackId]\nJOIN [Invoice] i ON il.[InvoiceId] = i.[InvoiceId]\nJOIN [Customer] c ON i.[CustomerId] = c.[CustomerId]\nJOIN [Artist] a ON t.[AlbumId] = a.[ArtistId]\nGROUP BY a.[Name]\nORDER BY TotalRevenue DESC\nLIMIT 1",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT a.[Name], SUM(il.[Quantity] * t.[UnitPrice]) AS TotalRevenue\nFROM [Track] t\nJOIN [InvoiceLine] il ON t.[TrackId] = il.[TrackId]\nJOIN [Invoice] i ON il.[InvoiceId] = i.[InvoiceId]\nJOIN [Customer] c ON i.[CustomerId] = c.[CustomerId]\nJOIN [Artist] a ON t.[AlbumId] = a.[ArtistId]\nGROUP BY a.[Name]\nORDER BY TotalRevenue DESC\nLIMIT 1",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT a.[Name], SUM(il.[Quantity] * t.[UnitPrice]) AS TotalRevenue\nFROM [Track] t\nJOIN [InvoiceLine] il ON t.[TrackId] = il.[TrackId]\nJOIN [Invoice] i ON il.[InvoiceId] = i.[InvoiceId]\nJOIN [Customer] c ON i.[CustomerId] = c.[CustomerId]\nJOIN [Artist] a ON t.[AlbumId] = a.[ArtistId]\nGROUP BY a.[Name]\nORDER BY TotalRevenue DESC\nLIMIT 1",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "What percentage of all tracks belong to the Rock genre?",
+      "difficulty": "hard",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT ROUND(CAST(COUNT(*) AS REAL) / (SELECT COUNT(*) FROM Track) * 100, 2) AS Percentage\nFROM Track\nWHERE GenreId IN (SELECT GenreId FROM Genre WHERE Name = 'Rock')\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT ROUND(CAST(COUNT(*) AS REAL) / (SELECT COUNT(*) FROM Track) * 100, 2) AS Percentage\nFROM Track\nWHERE GenreId IN (SELECT GenreId FROM Genre WHERE Name = 'Rock')\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT ROUND(CAST(COUNT(*) AS REAL) / (SELECT COUNT(*) FROM Track) * 100, 2) AS Percentage\nFROM Track\nWHERE GenreId IN (SELECT GenreId FROM Genre WHERE Name = 'Rock')\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT ROUND(CAST(COUNT(*) AS REAL) / (SELECT COUNT(*) FROM Track) * 100, 2) AS Percentage\nFROM Track\nWHERE GenreId IN (SELECT GenreId FROM Genre WHERE Name = 'Rock')\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "Find the employee who has no manager above them in the reporting chain.",
+      "difficulty": "hard",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT e.*\nFROM Employee e\nWHERE e.ReportsTo IS NULL\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT e.*\nFROM Employee e\nWHERE e.ReportsTo IS NULL\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT e.*\nFROM Employee e\nWHERE e.ReportsTo IS NULL\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT e.*\nFROM Employee e\nWHERE e.ReportsTo IS NULL\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "List customers who have never made a single purchase.",
+      "difficulty": "hard",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT c.*\nFROM Customer c\nLEFT JOIN Invoice i ON c.CustomerId = i.CustomerId\nWHERE i.InvoiceId IS NULL\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT c.*\nFROM Customer c\nLEFT JOIN Invoice i ON c.CustomerId = i.CustomerId\nWHERE i.InvoiceId IS NULL\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT c.*\nFROM Customer c\nLEFT JOIN Invoice i ON c.CustomerId = i.CustomerId\nWHERE i.InvoiceId IS NULL\nLIMIT 200",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT c.*\nFROM Customer c\nLEFT JOIN Invoice i ON c.CustomerId = i.CustomerId\nWHERE i.InvoiceId IS NULL\nLIMIT 200",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "Which playlist has the most tracks, and how many tracks does it contain?",
+      "difficulty": "hard",
+      "without_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT p.Name, COUNT(pt.TrackId) AS TrackCount\nFROM Playlist p\nJOIN PlaylistTrack pt ON p.PlaylistId = pt.PlaylistId\nGROUP BY p.PlaylistId, p.Name\nORDER BY TrackCount DESC\nLIMIT 1",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT p.Name, COUNT(pt.TrackId) AS TrackCount\nFROM Playlist p\nJOIN PlaylistTrack pt ON p.PlaylistId = pt.PlaylistId\nGROUP BY p.PlaylistId, p.Name\nORDER BY TrackCount DESC\nLIMIT 1",
+            "stage": "success"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": true,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "SELECT p.Name, COUNT(pt.TrackId) AS TrackCount\nFROM Playlist p\nJOIN PlaylistTrack pt ON p.PlaylistId = pt.PlaylistId\nGROUP BY p.PlaylistId, p.Name\nORDER BY TrackCount DESC\nLIMIT 1",
+        "error": "",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT p.Name, COUNT(pt.TrackId) AS TrackCount\nFROM Playlist p\nJOIN PlaylistTrack pt ON p.PlaylistId = pt.PlaylistId\nGROUP BY p.PlaylistId, p.Name\nORDER BY TrackCount DESC\nLIMIT 1",
+            "stage": "success"
+          }
+        ]
+      }
+    },
+    {
+      "question": "For each year with invoices, show the total sales for that year, ordered by year.",
+      "difficulty": "hard",
+      "without_self_correction": {
+        "succeeded": false,
+        "attempts": 1,
+        "used_self_correction": false,
+        "final_sql": "",
+        "error": "Exceeded max retries without a successful query.",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT \n    DATEPART('year', InvoiceDate) AS Year,\n    SUM(Total) AS TotalSales\nFROM \n    Invoice\nGROUP BY \n    DATEPART('year', InvoiceDate)\nORDER BY \n    Year\nLIMIT 200",
+            "stage": "execution",
+            "error": "no such function: DATEPART"
+          }
+        ]
+      },
+      "with_self_correction": {
+        "succeeded": false,
+        "attempts": 2,
+        "used_self_correction": false,
+        "final_sql": "",
+        "error": "Could not reach Ollama at http://localhost:11434. Original error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+        "attempt_log": [
+          {
+            "attempt": 1,
+            "sql": "SELECT \n    DATEPART('year', InvoiceDate) AS Year,\n    SUM(Total) AS TotalSales\nFROM \n    Invoice\nGROUP BY \n    DATEPART('year', InvoiceDate)\nORDER BY \n    Year\nLIMIT 200",
+            "stage": "execution",
+            "error": "no such function: DATEPART"
+          },
+          {
+            "attempt": 2,
+            "stage": "llm_call",
+            "error": "Could not reach Ollama at http://localhost:11434. Original error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+          }
+        ]
+      }
+    }
+  ]
+}

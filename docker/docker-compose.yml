@@ -1,0 +1,25 @@
+
+# Omni-Agent Analytics — Application using host Ollama
+
+name: omni-agent-analytics
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: omni-agent-analytics:latest
+    restart: unless-stopped
+
+    environment:
+      OLLAMA_HOST: http://host.docker.internal:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-llama3:8b}
+
+    ports:
+      - "127.0.0.1:8000:8000"
+
+    volumes:
+      - app_data:/app/data
+
+volumes:
+  app_data:

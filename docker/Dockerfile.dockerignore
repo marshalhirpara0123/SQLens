@@ -1,0 +1,22 @@
+# Used automatically by Docker BuildKit for docker/Dockerfile (the default
+# builder in current Docker Desktop and Docker Compose v2).
+#
+# Keeps the image small and, more importantly, keeps YOUR runtime data out
+# of an image you might hand to someone else.
+
+.git
+.gitignore
+.github
+.pytest_cache
+.venv
+venv
+env
+.env
+**/__pycache__
+**/*.pyc
+*.log
+
+# Live data created while using the app: never bake into the image.
+data/chroma
+data/pdfs/uploads
+data/db/uploads

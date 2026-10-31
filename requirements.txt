@@ -1,0 +1,38 @@
+# ==============================================================================
+# Omni-Agent Analytics — Python Dependencies
+# Tested on Python 3.12 (also compatible with Python 3.11 Docker runtime)
+# ==============================================================================
+
+# --- Backend & API ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+requests>=2.31.0
+python-multipart>=0.0.9          # Required by FastAPI for file uploads (PDF & SQL scripts)
+
+# --- Agent Orchestration ---
+langgraph>=0.2.0                # Multi-agent state machine (routing, execution, synthesis)
+
+# --- Unstructured Data & RAG Pipeline ---
+chromadb>=0.5.0                 # Local vector database for document embeddings
+sentence-transformers>=3.0.0    # Local embedding model (all-MiniLM-L6-v2)
+pypdf>=4.2.0                    # PDF extraction and chunking
+
+# --- Sample Data Generation ---
+reportlab>=4.0.0                # Used by scripts/generate_sample_pdfs.py
+
+# --- Evaluation Suite (Phase 3) ---
+ragas>=0.2.0                    # Offline RAG evaluation harness
+langchain-ollama>=0.1.0         # Local Ollama judge integration for Ragas
+langchain-huggingface>=0.1.0    # Local Hugging Face embedding wrapper for Ragas
+langchain-community>=0.2.0      # Required for Ragas / LangChain evaluation adapters
+
+# --- Testing ---
+pytest>=8.0.0                   # Automated test suite (unit and integration tests)
+
+# ==============================================================================
+# Note on Local Services & System Libraries:
+# - Ollama (Local LLM): Standalone service. Install from https://ollama.com
+#   and pull the model: `ollama pull llama3:8b`
+# - SQLite: Part of Python's standard library (no pip install required)
+# ==============================================================================
